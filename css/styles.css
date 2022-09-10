@@ -3,37 +3,51 @@
 }
 
 .container-fluid {
-    padding: 3% 10%;
+  padding: 3% 10%;
+}
+
+#footer {
+  background-color: #66bfbf;
+  margin-bottom: 0;
+  line-height: 2;
+  padding: 20px 0 20px;
 }
 
 #img {
-    padding: 10px 0 10px 0;
-    height: auto;
-    max-width: 100%;
+  padding: 10px 0 10px 0;
+  height: auto;
+  max-width: 100%;
 }
 
-
+#pic {
+  height: auto;
+  max-width: 80%;
+}
 
 h3 {
-    font-size: medium;
+  font-size: medium;
 }
 
 .navbar {
-    padding: 0 0 30px;
+  padding: 0 0 30px;
 }
 
-.logo{
-    font-size: large;
+.logo {
+  font-size: large;
 }
 
 .nav-item {
-    padding: 0 10px;
+  padding: 0 10px;
 }
 
-.nav-link{
-    font-size: large;
+.nav-link {
+  font-size: large;
 }
 
-.collapse{
-    justify-content: right;
+.collapse {
+  justify-content: right;
+}
+
+.carousel .carousel-item {
+  height: 500px;
 }
