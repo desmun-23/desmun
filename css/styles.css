@@ -4,6 +4,7 @@
 
 .container-fluid {
   padding: 3% 10%;
+  position: relative;
 }
 
 #footer {
@@ -45,6 +46,9 @@
   padding-bottom: 20px;
 }
 
+#exec{
+  height: auto;
+}
 
 .the4{
   padding-top: 20px;
@@ -78,9 +82,21 @@
   justify-content: right;
 }
 
-.carousel .carousel-item {
-  height: 30rem;
+.carousel-indicators{
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
+
+
+.carousel-item{
+  margin-bottom: 20px;
+}
+
+
+.carousel{
+  height: auto;
+}
+
 
 .carousel-control-prev{
   position: absolute;
