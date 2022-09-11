@@ -13,6 +13,7 @@
   padding: 20px 0 20px;
 }
 
+
 #img {
   height: auto;
   max-width: 100%;
@@ -78,15 +79,16 @@
 }
 
 .carousel .carousel-item {
-  height: 500px;
+  height: 30rem;
 }
 
 .carousel-control-prev{
-  padding-left: 0px;
+  position: absolute;
+  right: 20px;
 }
 
 .carousel-control-next{
-  padding-right: 0px;
+  position: absolute;
 }
 
 body{
