@@ -1,19 +1,76 @@
-#title {
-  background-color: #3e8b68;
-}
-
 .container-fluid {
   padding: 3% 10%;
   position: relative;
 }
 
-#footer {
-  background-color: #66bfbf;
-  margin-bottom: 0;
-  line-height: 2;
-  padding: 20px 0 20px;
+#title {
+  background-color: #7FB77E;
 }
 
+#goals {
+  background-color: #B1D7B4;
+}
+
+#video {
+
+  background-color: #F7F6DC;
+}
+
+#schedule {
+  background-color: #B1D7B4;
+}
+
+#delegations {
+  background-color: #F7F6DC;
+}
+
+#big4 {
+  background-color: #B1D7B4;
+}
+
+#exec{
+  background-color: #F7F6DC;
+  height: auto;
+  padding-bottom: 0;
+}
+
+#footer {
+  background-color: #7FB77E;
+  padding: 30px 0;
+}
+
+.social {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 25px;
+  color: #4b4c4d;
+}
+
+.social a{
+  font-size: 24px;
+  color: inherit;
+  border: 1px solid #ccc;
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0 8px;
+  opacity: 0.75;
+}
+
+.social a:hover{
+  opacity: 0.95;
+
+}
+
+.copyright{
+  margin-top: 15px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 20px;
+}
 
 #img {
   height: auto;
@@ -46,9 +103,7 @@
   padding-bottom: 20px;
 }
 
-#exec{
-  height: auto;
-}
+
 
 .the4{
   padding-top: 20px;
@@ -89,7 +144,7 @@
 
 
 .carousel-item{
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 
