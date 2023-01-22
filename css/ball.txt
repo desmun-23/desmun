@@ -1,0 +1,35 @@
+#title {
+  background-color: #7FB77E;
+}
+
+#goals {
+  background-color: #B1D7B4;
+}
+
+#video {
+
+  background-color: #F7F6DC;
+}
+
+#schedule {
+  background-color: #B1D7B4;
+}
+
+#delegations {
+  background-color: #F7F6DC;
+}
+
+#big4 {
+  background-color: #B1D7B4;
+}
+
+#exec{
+  background-color: #F7F6DC;
+  height: auto;
+  padding-bottom: 0;
+}
+
+#footer {
+  background-color: #7FB77E;
+  padding: 30px 0;
+}

@@ -26,10 +26,21 @@ h4{
   font-weight: 300;
 }
 
+a{
+  font-size: 1.2rem;
+  line-height: 1.3;
+  font-weight: 300;
+}
+
 p{
   font-size: 1.2rem;
   line-height: 1.3;
   font-weight: 300;
+}
+
+nav{
+  background-color: #ea7b2c;
+
 }
 
 .container-fluid {
@@ -37,39 +48,51 @@ p{
   position: relative;
 }
 
-#title {
-  background-color: #7FB77E;
+#title{
+  padding-top: 90px;
+  background: linear-gradient(#ea7b2c, #F79C5A)
 }
 
-#goals {
-  background-color: #B1D7B4;
-}
 
 #video {
 
-  background-color: #F7F6DC;
+  /* background-color: #DFE8CC; */
+  background: linear-gradient(#F79C5A, #DDBFAD)
+
 }
 
-#schedule {
-  background-color: #B1D7B4;
-}
-
-#delegations {
-  background-color: #F7F6DC;
-}
 
 #big4 {
-  background-color: #B1D7B4;
+  /* background-color: #F7EDDB; */
+  background: linear-gradient(#DDBFAD, #B9D3F3)
+
 }
 
 #exec{
-  background-color: #F7F6DC;
+  /* background-color: #DAE2B6; */
+  background: linear-gradient(#B9D3F3, #CCD7ED);
   height: auto;
   padding-bottom: 0;
 }
 
+#schedule {
+  /* background-color: #F7EDDB; */
+  background: linear-gradient(#CCD7ED, #B9D3F3)
+
+}
+
+#delegations {
+  /* background-color: #DFE8CC; */
+  background: linear-gradient(#B9D3F3, #DDBFAD)
+
+}
+
+#contact{
+  background: linear-gradient(#DDBFAD, #F79C5A)
+}
+
 #footer {
-  background-color: #7FB77E;
+  background-color: #F79C5A;
   padding: 30px 0;
 }
 
@@ -114,6 +137,7 @@ p{
 
 #title-text{
   font-size: 33px;
+  padding-left: 15px;
   margin-bottom: 0;
 }
 
@@ -138,28 +162,35 @@ p{
 }
 
 #director{
-  border: 1px solid black;
-  background-color: #66bfbf;
+  background-color: #E6A770;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
 
 .accordion-item{
+  border: 0px;
+  padding: 0px;
   background-color: #B1D7B4;
 }
 
 .the4{
-  border: 1px solid black;
-  background-color: #F7F6DC;
+  background-color: #E3C5B1;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
+.team-photos{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 
-
-.navbar {
-  padding: 0 0 30px;
+.carousel-caption{
+  background-color: rgba(124,252,0,.5);
+  top: auto;
+  bottom: 0;
 }
 
 .logo {
