@@ -1,4 +1,5 @@
 body{
+  background-color: #BCD0E9;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -56,46 +57,14 @@ nav{
 
 #title{
   padding-top: 90px;
-  background: linear-gradient(#ea7b2c, #F79C5A)
-}
-
-
-#video {
-
-  /* background-color: #DFE8CC; */
-  background: linear-gradient(#F79C5A, #DDBFAD)
-
-}
-
-
-#big4 {
-  /* background-color: #F7EDDB; */
-  background: linear-gradient(#DDBFAD, #B9D3F3)
-
 }
 
 #exec{
-  /* background-color: #DAE2B6; */
-  background: linear-gradient(#B9D3F3, #CCD7ED);
   height: auto;
   padding-bottom: 0;
 }
 
-#schedule {
-  /* background-color: #F7EDDB; */
-  background: linear-gradient(#CCD7ED, #B9D3F3)
 
-}
-
-#delegations {
-  /* background-color: #DFE8CC; */
-  background: linear-gradient(#B9D3F3, #DDBFAD)
-
-}
-
-#contact{
-  background: linear-gradient(#DDBFAD, #F79C5A)
-}
 
 #footer {
   background-color: #F79C5A;
@@ -243,15 +212,15 @@ height: auto;
 #delegation-button{
   margin-top: 10px;
   margin-bottom: 10px;
-  display: block;
-  margin-left: auto;
   margin-right: auto;
-  border-color: black;
-  background-color: #3e8b68;
+  margin-left: auto;
+  display: block;
+  width: 100%;
+  background-color: #F79C5A;
 }
 
 #delegation-button:hover{
-  background-color: #AFE1AF
+  background-color: #E3C5B1
 }
 
 iframe{

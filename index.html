@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="script.js"></script>
     <title>DESMUN 2023</title>
     <link rel="icon" href="images\logo-cropped.png" />
     <link
@@ -40,9 +42,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" href="#video">Video</a>
-            </li>
+            </li> -->
             <li class="nav-item">
               <a class="nav-link" href="#big4">Team</a>
             </li>
@@ -67,16 +69,16 @@
             alt="" />
         </div>
         <div class="col-md-8" id="welcome">
-          <h1>Welcome Message</h1>
+          <h1>Welcome Message [1]</h1>
           <h3>
             Vestibulum mi velit, lacinia vitae metus id, porta auctor odio. Sed
-            fringilla nisl non eros malesuada, in maximus arcu lacinia.
+            fringilla nisl non eros malesuada, in maximus arcu lacinia. [2]
           </h3>
         </div>
       </div>
     </div>
 
-    <div class="container-fluid" id="video">
+    <!-- <div class="container-fluid" id="video">
       <div class="row">
         <div class="col-md-4">
           <h2>Video</h2>
@@ -93,483 +95,510 @@
             allowfullscreen></iframe>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <div class="container-fluid" id="big4">
       <div class="row">
         <h2>Meet our team!</h2>
       </div>
-      <div class="row align-items-center" id="director">
-        <div class="col-md-4 d-flex justify-content-center">
+      <div class="row align-items-center justify-content-center" id="director">
+        <div class="col-md-3 col-10">
           <img src="images\face.png" alt="" class="" id="img" />
         </div>
-        <div class="col-md-8">
+        <div class="col-md-6 col-10">
           <h3>Mr Milne</h3>
           <h4>Director</h4>
           <p>
             Maecenas vitae elementum nisl. Nulla vel velit at lectus porttitor
             feugiat. Maecenas ac velit nisl. Pellentesque mollis ultricies odio,
             rutrum vehicula dolor hendrerit ut.
+          </p>
         </div>
       </div>
       <div class="row" id="big4row">
-        <div class="col-md-3 the4">
+        <div class="col-md-3 col-6 the4">
           <div class="row align-items-center">
-            <div class="col-md-12 col-sm-6">
+            <div class="col-md-12 col-12">
               <img src="images\face1.png" alt="" id="pic" />
             </div>
-            <div class="col-md-12 col-sm-6">
+            <div class="col-md-12 col-12">
               <h3>Anushka</h3>
               <h4>Secretary General</h4>
               <p>
                 Maecenas vitae elementum nisl. Nulla vel velit at lectus
-                porttitor feugiat. Maecenas ac velit nisl.
+                porttitor feugiat.
               </p>
             </div>
           </div>
         </div>
-        <div class="col-md-3 the4">
+        <div class="col-md-3 col-6 the4">
           <div class="row align-items-center">
-            <div class="col-md-12 col-sm-6">
+            <div class="col-md-12 col-12">
               <img src="images\face2.png" id="pic" alt="" />
             </div>
-            <div class="col-md-12 col-sm-6">
+            <div class="col-md-12 col-12">
               <h3>Tamara</h3>
               <h4>Deputy Secretary General</h4>
               <p>
                 Maecenas vitae elementum nisl. Nulla vel velit at lectus
-                porttitor feugiat. Maecenas ac velit nisl.
+                porttitor feugiat.
               </p>
             </div>
           </div>
         </div>
-        <div class="col-md-3 the4">
+        <div class="col-md-3 col-6 the4">
           <div class="row align-items-center">
-            <div class="col-md-12 col-sm-6">
+            <div class="col-md-12 col-12">
               <img src="images\face1.png" id="pic" alt="" />
             </div>
-            <div class="col-md-12 col-sm-6">
+            <div class="col-md-12 col-12">
               <h3>Delina</h3>
               <h4>President</h4>
               <p>
                 Maecenas vitae elementum nisl. Nulla vel velit at lectus
-                porttitor feugiat. Maecenas ac velit nisl.
+                porttitor feugiat.
               </p>
             </div>
           </div>
         </div>
-        <div class="col-md-3 the4">
+        <div class="col-md-3 col-6 the4">
           <div class="row align-items-center">
-            <div class="col-md-12 col-sm-6">
+            <div class="col-md-12 col-12">
               <img src="images\face2.png" id="pic" alt="" />
             </div>
-            <div class="col-md-12 col-sm-6">
+            <div class="col-md-12 col-12">
               <h3>Purva</h3>
               <h4>Deputy President</h4>
               <p>
                 Maecenas vitae elementum nisl. Nulla vel velit at lectus
-                porttitor feugiat. Maecenas ac velit nisl.
+                porttitor feugiat.
               </p>
             </div>
           </div>
         </div>
       </div>
       <h3>Executive team</h3>
+      <div id="drop">
         <div class="row">
-            <div class="col-md-2 col-sm-4 col-4">
-              <a id="delegation-button"
+          <div class="col-md-2 col-sm-4 col-4">
+            <button
+              id="delegation-button"
               class="btn btn-primary"
+              type="button"
               data-bs-toggle="collapse"
-              href="#Admin"
-              role="button"
+              data-bs-target="#Admin"
               aria-expanded="false"
-              aria-controls="collapseExample"
-            >
+              aria-controls="collapseExample">
               Admin
-            </a>
-            </div>
-            <div class="col-md-2 col-sm-4 col-4">
-              <a id="delegation-button"
+            </button>
+          </div>
+          <div class="col-md-2 col-sm-4 col-4">
+            <button
+              id="delegation-button"
               class="btn btn-primary"
+              type="button"
               data-bs-toggle="collapse"
-              href="#Press"
-              role="button"
+              data-bs-target="#Press"
               aria-expanded="false"
-              aria-controls="collapseExample"
-            >
+              aria-controls="collapseExample">
               Press
-            </a>
-            </div>
-            <div class="col-md-2 col-sm-4 col-4">
-              <a id="delegation-button"
+            </button>
+          </div>
+          <div class="col-md-2 col-sm-4 col-4">
+            <button
+              id="delegation-button"
               class="btn btn-primary"
+              type="button"
               data-bs-toggle="collapse"
-              href="#Tech"
-              role="button"
+              data-bs-target="#Tech"
               aria-expanded="false"
-              aria-controls="collapseExample"
-            >
+              aria-controls="collapseExample">
               Tech
-            </a>
-            </div>
-            <div class="col-md-2 col-sm-4 col-4">
-              <a id="delegation-button"
+            </button>
+          </div>
+          <div class="col-md-2 col-sm-4 col-4">
+            <button
+              id="delegation-button"
               class="btn btn-primary"
+              type="button"
               data-bs-toggle="collapse"
-              href="#SSC"
-              role="button"
+              data-bs-target="#SCC"
               aria-expanded="false"
-              aria-controls="collapseExample"
-            >
-              SSC
-            </a>
-            </div>
-            <div class="col-md-4 col-sm-8 col-8">
-              <a id="delegation-button"
+              aria-controls="collapseExample">
+              SCC
+            </button>
+          </div>
+          <div class="col-md-4 col-sm-8 col-8">
+            <button
+              id="delegation-button"
               class="btn btn-primary"
+              type="button"
               data-bs-toggle="collapse"
-              href="#Communications"
-              role="button"
+              data-bs-target="#Communications"
               aria-expanded="false"
-              aria-controls="collapseExample"
-            >
+              aria-controls="collapseExample">
               Communications
-            </a>
-            </div>
+            </button>
+          </div>
         </div>
-        <div class="collapse" id="Admin">
-            <div id="car1" class="carousel slide">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <div class="row justify-content-center">
-                    <div class="col-8 col-md-4 col-sm-8"><img src="images\face.png" id="pic" alt=""></div>
-                    <div class="col-8 col-md-4 col-sm-8 exec-text">
-                      <h3>Aya</h3>
-                      <h4>Head of Admin</h4>
-                      <p>
-                        Maecenas vitae elementum nisl. Nulla vel velit at lectus porttitor
-                        feugiat.
-                      </p>
-                    </div>
+        <div id="Admin" class="collapse" data-bs-parent="#drop">
+          <div id="car1" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row justify-content-center">
+                  <div class="col-8 col-md-4 col-sm-8">
+                    <img src="images\face.png" id="pic" alt="" />
                   </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="row justify-content-center">
-                    <div class="col-8 col-md-4 col-sm-8"><img src="images\face.png" id="pic" alt=""></div>
-                    <div class="col-8 col-md-4 col-sm-8 exec-text">
-                      <h3>Luigi</h3>
-                      <h4>Head of Admin</h4>
-                      <p>
-                        Maecenas vitae elementum nisl. Nulla vel velit at lectus porttitor
-                        feugiat.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="row justify-content-center">
-                    <div class="col-8 col-md-4 col-sm-8"><img src="images\face.png" id="pic" alt=""></div>
-                    <div class="col-8 col-md-4 col-sm-8 exec-text">
-                      <h3>Nimra</h3>
-                      <h4>Deputy Head of Admin</h4>
-                      <p>
-                        Maecenas vitae elementum nisl. Nulla vel velit at lectus porttitor
-                        feugiat.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="row justify-content-center">
-                    <div class="col-8 col-md-4 col-sm-8"><img src="images\face.png" id="pic" alt=""></div>
-                    <div class="col-8 col-md-4 col-sm-8 exec-text">
-                      <h3>Namya</h3>
-                      <h4>Deputy Head of Admin</h4>
-                      <p>
-                        Maecenas vitae elementum nisl. Nulla vel velit at lectus porttitor
-                        feugiat.
-                      </p>
-                    </div>
+                  <div class="col-8 col-md-4 col-sm-8 exec-text">
+                    <h3>Aya</h3>
+                    <h4>Head of Admin</h4>
+                    <p>
+                      Maecenas vitae elementum nisl. Nulla vel velit at lectus
+                      porttitor feugiat.
+                    </p>
                   </div>
                 </div>
               </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#car1" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#car1" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-          
-        </div>
-        <div class="collapse" id="Press">
-          
-            <div id="car2" class="carousel slide">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <div class="row justify-content-center">
-                    <div class="col-8 col-md-4 col-sm-8"><img src="images\face.png" id="pic" alt=""></div>
-                    <div class="col-8 col-md-4 col-sm-8 exec-text">
-                      <h3>Aya</h3>
-                      <h4>Head of Admin</h4>
-                      <p>
-                        Maecenas vitae elementum nisl. Nulla vel velit at lectus porttitor
-                        feugiat.
-                      </p>
-                    </div>
+              <div class="carousel-item">
+                <div class="row justify-content-center">
+                  <div class="col-8 col-md-4 col-sm-8">
+                    <img src="images\face.png" id="pic" alt="" />
                   </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="row justify-content-center">
-                    <div class="col-8 col-md-4 col-sm-8"><img src="images\face.png" id="pic" alt=""></div>
-                    <div class="col-8 col-md-4 col-sm-8 exec-text">
-                      <h3>Luigi</h3>
-                      <h4>Head of Admin</h4>
-                      <p>
-                        Maecenas vitae elementum nisl. Nulla vel velit at lectus porttitor
-                        feugiat.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="row justify-content-center">
-                    <div class="col-8 col-md-4 col-sm-8"><img src="images\face.png" id="pic" alt=""></div>
-                    <div class="col-8 col-md-4 col-sm-8 exec-text">
-                      <h3>Nimra</h3>
-                      <h4>Deputy Head of Admin</h4>
-                      <p>
-                        Maecenas vitae elementum nisl. Nulla vel velit at lectus porttitor
-                        feugiat.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="row justify-content-center">
-                    <div class="col-8 col-md-4 col-sm-8"><img src="images\face.png" id="pic" alt=""></div>
-                    <div class="col-8 col-md-4 col-sm-8 exec-text">
-                      <h3>Namya</h3>
-                      <h4>Deputy Head of Admin</h4>
-                      <p>
-                        Maecenas vitae elementum nisl. Nulla vel velit at lectus porttitor
-                        feugiat.
-                      </p>
-                    </div>
+                  <div class="col-8 col-md-4 col-sm-8 exec-text">
+                    <h3>Luigi</h3>
+                    <h4>Head of Admin</h4>
+                    <p>
+                      Maecenas vitae elementum nisl. Nulla vel velit at lectus
+                      porttitor feugiat.
+                    </p>
                   </div>
                 </div>
               </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#car2" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#car2" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
+              <div class="carousel-item">
+                <div class="row justify-content-center">
+                  <div class="col-8 col-md-4 col-sm-8">
+                    <img src="images\face.png" id="pic" alt="" />
+                  </div>
+                  <div class="col-8 col-md-4 col-sm-8 exec-text">
+                    <h3>Nimra</h3>
+                    <h4>Deputy Head of Admin</h4>
+                    <p>
+                      Maecenas vitae elementum nisl. Nulla vel velit at lectus
+                      porttitor feugiat.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row justify-content-center">
+                  <div class="col-8 col-md-4 col-sm-8">
+                    <img src="images\face.png" id="pic" alt="" />
+                  </div>
+                  <div class="col-8 col-md-4 col-sm-8 exec-text">
+                    <h3>Namya</h3>
+                    <h4>Deputy Head of Admin</h4>
+                    <p>
+                      Maecenas vitae elementum nisl. Nulla vel velit at lectus
+                      porttitor feugiat.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
-          
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#car1"
+              data-bs-slide="prev">
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#car1"
+              data-bs-slide="next">
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         </div>
-        <div class="collapse" id="Tech">
+        <div id="Press" class="collapse" data-bs-parent="#drop">
+          <div id="car2" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row justify-content-center">
+                  <div class="col-8 col-md-4 col-sm-8">
+                    <img src="images\face.png" id="pic" alt="" />
+                  </div>
+                  <div class="col-8 col-md-4 col-sm-8 exec-text">
+                    <h3>Simran</h3>
+                    <h4>Head of Press</h4>
+                    <p>
+                      Maecenas vitae elementum nisl. Nulla vel velit at lectus
+                      porttitor feugiat.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row justify-content-center">
+                  <div class="col-8 col-md-4 col-sm-8">
+                    <img src="images\face.png" id="pic" alt="" />
+                  </div>
+                  <div class="col-8 col-md-4 col-sm-8 exec-text">
+                    <h3>Marielle</h3>
+                    <h4>Head of Press</h4>
+                    <p>
+                      Maecenas vitae elementum nisl. Nulla vel velit at lectus
+                      porttitor feugiat.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row justify-content-center">
+                  <div class="col-8 col-md-4 col-sm-8">
+                    <img src="images\face.png" id="pic" alt="" />
+                  </div>
+                  <div class="col-8 col-md-4 col-sm-8 exec-text">
+                    <h3>Richelle</h3>
+                    <h4>Deputy Head of Press</h4>
+                    <p>
+                      Maecenas vitae elementum nisl. Nulla vel velit at lectus
+                      porttitor feugiat.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#car2"
+              data-bs-slide="prev">
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#car2"
+              data-bs-slide="next">
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div id="Tech" class="collapse" data-bs-parent="#drop">
           <div id="car3" class="carousel slide">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <div class="row justify-content-center">
-                  <div class="col-8 col-md-4 col-sm-8"><img src="images\face.png" id="pic" alt=""></div>
+                  <div class="col-8 col-md-4 col-sm-8">
+                    <img src="images\face.png" id="pic" alt="" />
+                  </div>
                   <div class="col-8 col-md-4 col-sm-8 exec-text">
-                    <h3>Aya</h3>
-                    <h4>Head of Admin</h4>
+                    <h3>Salman</h3>
+                    <h4>Head of Tech</h4>
                     <p>
-                      Maecenas vitae elementum nisl. Nulla vel velit at lectus porttitor
-                      feugiat.
+                      Maecenas vitae elementum nisl. Nulla vel velit at lectus
+                      porttitor feugiat.
                     </p>
                   </div>
                 </div>
               </div>
               <div class="carousel-item">
                 <div class="row justify-content-center">
-                  <div class="col-8 col-md-4 col-sm-8"><img src="images\face.png" id="pic" alt=""></div>
+                  <div class="col-8 col-md-4 col-sm-8">
+                    <img src="images\face.png" id="pic" alt="" />
+                  </div>
                   <div class="col-8 col-md-4 col-sm-8 exec-text">
-                    <h3>Luigi</h3>
-                    <h4>Head of Admin</h4>
+                    <h3>Damindu</h3>
+                    <h4>Deputy Head of Tech</h4>
                     <p>
-                      Maecenas vitae elementum nisl. Nulla vel velit at lectus porttitor
-                      feugiat.
+                      Maecenas vitae elementum nisl. Nulla vel velit at lectus
+                      porttitor feugiat.
                     </p>
                   </div>
                 </div>
               </div>
               <div class="carousel-item">
                 <div class="row justify-content-center">
-                  <div class="col-8 col-md-4 col-sm-8"><img src="images\face.png" id="pic" alt=""></div>
-                  <div class="col-8 col-md-4 col-sm-8 exec-text">
-                    <h3>Nimra</h3>
-                    <h4>Deputy Head of Admin</h4>
-                    <p>
-                      Maecenas vitae elementum nisl. Nulla vel velit at lectus porttitor
-                      feugiat.
-                    </p>
+                  <div class="col-8 col-md-4 col-sm-8">
+                    <img src="images\face.png" id="pic" alt="" />
                   </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="row justify-content-center">
-                  <div class="col-8 col-md-4 col-sm-8"><img src="images\face.png" id="pic" alt=""></div>
                   <div class="col-8 col-md-4 col-sm-8 exec-text">
-                    <h3>Namya</h3>
-                    <h4>Deputy Head of Admin</h4>
+                    <h3>Moamen</h3>
+                    <h4>Deputy Head of Tech</h4>
                     <p>
-                      Maecenas vitae elementum nisl. Nulla vel velit at lectus porttitor
-                      feugiat.
+                      Maecenas vitae elementum nisl. Nulla vel velit at lectus
+                      porttitor feugiat.
                     </p>
                   </div>
                 </div>
               </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#car3" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#car3"
+              data-bs-slide="prev">
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#car3" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#car3"
+              data-bs-slide="next">
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
             </button>
           </div>
         </div>
-        <div class="collapse" id="SSC">
-          <div id="car4" class="carousel slide">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="row justify-content-center">
-                  <div class="col-8 col-md-4 col-sm-8"><img src="images\face.png" id="pic" alt=""></div>
-                  <div class="col-8 col-md-4 col-sm-8 exec-text">
-                    <h3>Aya</h3>
-                    <h4>Head of Admin</h4>
-                    <p>
-                      Maecenas vitae elementum nisl. Nulla vel velit at lectus porttitor
-                      feugiat.
-                    </p>
+        <div id="SCC" class="collapse" data-bs-parent="#drop">
+
+            <div id="car4" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row justify-content-center">
+                    <div class="col-8 col-md-4 col-sm-8">
+                      <img src="images\face.png" id="pic" alt="" />
+                    </div>
+                    <div class="col-8 col-md-4 col-sm-8 exec-text">
+                      <h3>Nejood</h3>
+                      <h4>Head of Admin</h4>
+                      <p>
+                        Maecenas vitae elementum nisl. Nulla vel velit at lectus
+                        porttitor feugiat.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row justify-content-center">
+                    <div class="col-8 col-md-4 col-sm-8">
+                      <img src="images\face.png" id="pic" alt="" />
+                    </div>
+                    <div class="col-8 col-md-4 col-sm-8 exec-text">
+                      <h3>Chiara</h3>
+                      <h4>Head of Admin</h4>
+                      <p>
+                        Maecenas vitae elementum nisl. Nulla vel velit at lectus
+                        porttitor feugiat.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row justify-content-center">
+                    <div class="col-8 col-md-4 col-sm-8">
+                      <img src="images\face.png" id="pic" alt="" />
+                    </div>
+                    <div class="col-8 col-md-4 col-sm-8 exec-text">
+                      <h3>Farha</h3>
+                      <h4>Deputy Head of Admin</h4>
+                      <p>
+                        Maecenas vitae elementum nisl. Nulla vel velit at lectus
+                        porttitor feugiat.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="carousel-item">
-                <div class="row justify-content-center">
-                  <div class="col-8 col-md-4 col-sm-8"><img src="images\face.png" id="pic" alt=""></div>
-                  <div class="col-8 col-md-4 col-sm-8 exec-text">
-                    <h3>Luigi</h3>
-                    <h4>Head of Admin</h4>
-                    <p>
-                      Maecenas vitae elementum nisl. Nulla vel velit at lectus porttitor
-                      feugiat.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="row justify-content-center">
-                  <div class="col-8 col-md-4 col-sm-8"><img src="images\face.png" id="pic" alt=""></div>
-                  <div class="col-8 col-md-4 col-sm-8 exec-text">
-                    <h3>Nimra</h3>
-                    <h4>Deputy Head of Admin</h4>
-                    <p>
-                      Maecenas vitae elementum nisl. Nulla vel velit at lectus porttitor
-                      feugiat.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="row justify-content-center">
-                  <div class="col-8 col-md-4 col-sm-8"><img src="images\face.png" id="pic" alt=""></div>
-                  <div class="col-8 col-md-4 col-sm-8 exec-text">
-                    <h3>Namya</h3>
-                    <h4>Deputy Head of Admin</h4>
-                    <p>
-                      Maecenas vitae elementum nisl. Nulla vel velit at lectus porttitor
-                      feugiat.
-                    </p>
-                  </div>
-                </div>
-              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#car4"
+                data-bs-slide="prev">
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#car4"
+                data-bs-slide="next">
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#car4" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#car4" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
+
         </div>
-        <div class="collapse" id="Communications">
-          <div id="car5" class="carousel slide">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="row justify-content-center">
-                  <div class="col-8 col-md-4 col-sm-8"><img src="images\face.png" id="pic" alt=""></div>
-                  <div class="col-8 col-md-4 col-sm-8 exec-text">
-                    <h3>Aya</h3>
-                    <h4>Head of Admin</h4>
-                    <p>
-                      Maecenas vitae elementum nisl. Nulla vel velit at lectus porttitor
-                      feugiat.
-                    </p>
+        <div id="Communications" class="collapse" data-bs-parent="#drop">
+            <div id="car5" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row justify-content-center">
+                    <div class="col-8 col-md-4 col-sm-8">
+                      <img src="images\face.png" id="pic" alt="" />
+                    </div>
+                    <div class="col-8 col-md-4 col-sm-8 exec-text">
+                      <h3>Fatima</h3>
+                      <h4>Head of Communications</h4>
+                      <p>
+                        Maecenas vitae elementum nisl. Nulla vel velit at lectus
+                        porttitor feugiat.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row justify-content-center">
+                    <div class="col-8 col-md-4 col-sm-8">
+                      <img src="images\face.png" id="pic" alt="" />
+                    </div>
+                    <div class="col-8 col-md-4 col-sm-8 exec-text">
+                      <h3>Beissan</h3>
+                      <h4>Head of Communications</h4>
+                      <p>
+                        Maecenas vitae elementum nisl. Nulla vel velit at lectus
+                        porttitor feugiat.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="carousel-item">
-                <div class="row justify-content-center">
-                  <div class="col-8 col-md-4 col-sm-8"><img src="images\face.png" id="pic" alt=""></div>
-                  <div class="col-8 col-md-4 col-sm-8 exec-text">
-                    <h3>Luigi</h3>
-                    <h4>Head of Admin</h4>
-                    <p>
-                      Maecenas vitae elementum nisl. Nulla vel velit at lectus porttitor
-                      feugiat.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="row justify-content-center">
-                  <div class="col-8 col-md-4 col-sm-8"><img src="images\face.png" id="pic" alt=""></div>
-                  <div class="col-8 col-md-4 col-sm-8 exec-text">
-                    <h3>Nimra</h3>
-                    <h4>Deputy Head of Admin</h4>
-                    <p>
-                      Maecenas vitae elementum nisl. Nulla vel velit at lectus porttitor
-                      feugiat.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="row justify-content-center">
-                  <div class="col-8 col-md-4 col-sm-8"><img src="images\face.png" id="pic" alt=""></div>
-                  <div class="col-8 col-md-4 col-sm-8 exec-text">
-                    <h3>Namya</h3>
-                    <h4>Deputy Head of Admin</h4>
-                    <p>
-                      Maecenas vitae elementum nisl. Nulla vel velit at lectus porttitor
-                      feugiat.
-                    </p>
-                  </div>
-                </div>
-              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#car5"
+                data-bs-slide="prev">
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#car5"
+                data-bs-slide="next">
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#car5" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#car5" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
         </div>
+      </div>
     </div>
 
     <div class="container-fluid" id="schedule">
@@ -577,34 +606,45 @@
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin posuere
         turpis in urna rhoncus semper. Phasellus pellentesque vehicula augue ut
-        tincidunt. Morbi fermentum nibh tortor, a pharetra leo lobortis at.
-        Mauris sem lectus, laoreet vel sem interdum, vestibulum porta turpis.
-        Etiam ac justo vel nisl interdum rutrum.
+        tincidunt. [3]
       </p>
       <div class="row justify-content-md-center">
         <div class="col-md-6">
           <table class="table table-striped">
             <thead>
               <tr>
-                <td class="fw-bold">Day 1</td>
+                <h4>Day 1</h3>
+              </tr>
+              <tr class="fw-bold">
+                <td>Time</td>
+                <td>Event</td>
+                <td>Location</td>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>Time</td>
-                <td>Event</td>
+                <td>2pm</td>
+                <td>Arrival</td>
+                <td>Assembly Hall </td>
               </tr>
               <tr>
-                <td>Time</td>
-                <td>Event</td>
+                <td>2:30pm - 3:00pm</td>
+                <td>Registration and Icebreakers</td>
+                <td>Committee Room</td>
               </tr>
               <tr>
-                <td>Time</td>
-                <td>Event</td>
+                <td>3:00pm - 5:00pm </td>
+                <td>Lobbying</td>
+                <td>Committee Room</td>
               </tr>
               <tr>
-                <td>Time</td>
-                <td>Event</td>
+                <td>5:15pm - 5:45pm</td>
+                <td>Opening Ceremony</td>
+                <td>Cinema</td>
+              </tr>
+              <tr>
+                <td>6pm</td>
+                <td>Departure</td>
               </tr>
             </tbody>
           </table>
@@ -613,25 +653,59 @@
           <table class="table table-striped">
             <thead>
               <tr>
-                <td class="fw-bold">Day 2</td>
+                <h4>Day 2</h4>
+              </tr>
+              <tr class="fw-bold">
+                <td>Time</td>
+                <td>Event</td>
+                <td>Location</td>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>Time</td>
-                <td>Event</td>
+                <td>8am</td>
+                <td>Arrival</td>
+                <td>Assembly Hall</td>
               </tr>
               <tr>
-                <td>Time</td>
-                <td>Event</td>
+                <td>8:30am - 10am</td>
+                <td>Committee Session 1 </td>
+                <td>Committee Room</td>
               </tr>
               <tr>
-                <td>Time</td>
-                <td>Event</td>
+                <td>10am - 11:30am</td>
+                <td>Committee Session 2</td>
+                <td>Committee Room</td>
               </tr>
               <tr>
-                <td>Time</td>
-                <td>Event</td>
+                <td>11am</td>
+                <td>Prayer Time</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>11:30am - 1pm</td>
+                <td>Lunch</td>
+                <td>Assembly Hall </td>
+              </tr>
+              <tr>
+                <td>1pm - 2:30pm</td>
+                <td>Committee Session 3</td>
+                <td>Committee Room </td>
+              </tr>
+              <tr>
+                <td>2:30pm - 4pm</td>
+                <td>Committee Session 4</td>
+                <td>Committee Room </td>
+              </tr>
+              <tr>
+                <td>4pm - 4:30pm</td>
+                <td>Committee Session 4.5</td>
+                <td>Committee Room </td>
+              </tr>
+              <tr>
+                <td>4:45pm - 6:45pm</td>
+                <td>Closing Ceremony/Dinner/Music</td>
+                <td>Assembly Hall </td>
               </tr>
             </tbody>
           </table>
@@ -661,8 +735,8 @@
               aria-labelledby="GA1"
               data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                <p>Head chair: Ollie</p>
-                <p>Deputy chair: Akshya</p>
+                <p>Head chair: Ollie Craighead</p>
+                <p>Deputy chair: Akshya Konna</p>
                 <p>Issues:</p>
                 <a href="">
                   -The question of artifical intelligence in the context of
@@ -694,8 +768,8 @@
               aria-labelledby="GA6"
               data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                <p>Head chair: Chiara</p>
-                <p>Deputy chair: Marli</p>
+                <p>Head chair: Franzcesca Chiara</p>
+                <p>Deputy chair: Marli van der Merwe</p>
                 <p>Issues:</p>
                 <a href="">
                   -The issue of governments in the possession of data and
@@ -724,8 +798,8 @@
               aria-labelledby="UNICEF"
               data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                <p>Head chair: Nejood</p>
-                <p>Deputy chair: Shifa</p>
+                <p>Head chair: Nejood Abu-Taleb</p>
+                <p>Deputy chair: Shifa Parveen</p>
                 <p>Issues:</p>
                 <a href="">
                   -Remiving Tangible Barriers for Children to Escape Poverty
@@ -756,8 +830,8 @@
               aria-labelledby="ECOSOC"
               data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                <p>Head chair: Thabit</p>
-                <p>Deputy chair: Suhaylah</p>
+                <p>Head chair: Thabit Salim</p>
+                <p>Deputy chair: Suhaylah Elias</p>
                 <p>Issues:</p>
                 <a href="">
                   -Measures to counter female unemployment and the increasing
@@ -786,8 +860,8 @@
               aria-labelledby="SC"
               data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                <p>Head chair: Farha</p>
-                <p>Deputy chair: Aisya</p>
+                <p>Head chair: Farha Odakkam Kuzhiyil</p>
+                <p>Deputy chair: Aisya Hasna</p>
                 <p>Issues:</p>
                 <a href="">
                   -Threat to international peace and security resulting from the
@@ -816,8 +890,8 @@
               aria-labelledby="HRC"
               data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                <p>Head chair: Adrija</p>
-                <p>Deputy chair: Maesem</p>
+                <p>Head chair: Maesem El-Jafari</p>
+                <p>Deputy chair: Adrija Bhattacharya</p>
                 <p>Issues:</p>
                 <a href="">
                   -Measures to counter female unemployment and the increasing
@@ -849,7 +923,7 @@
               data-bs-parent="#accordionExample">
               <div class="accordion-body">
                 <p>Head chair: Bradley Wong</p>
-                <p>Deputy chair: Afra</p>
+                <p>Deputy chair: Afra Aslam Cassim</p>
                 <p>Issues:</p>
                 <a href=""> -Prevention of migrant smuggling </a>
                 <p></p>
@@ -875,7 +949,7 @@
               aria-labelledby="WHO"
               data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                <p>Head chair: Aimi</p>
+                <p>Head chair: Mimi Modh Faizal</p>
                 <p>Deputy chair: Mahi</p>
                 <p>Issues:</p>
                 <a href="">
@@ -896,7 +970,7 @@
     <div class="container-fluid" id="contact">
       <div class="row justify-content-center" style="padding-bottom: 30px">
         <div class="col-md-6">
-          <h2>Contact us</h2>
+          <h2>Contact us [4]</h2>
           <p>Director's Email</p>
           <a href="mailto:m.milne@des.qpschools.qa">m.milne@des.qpschools.qa</a>
           <p></p>
