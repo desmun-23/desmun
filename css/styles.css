@@ -1,37 +1,51 @@
-body{
-  background-color: #BCD0E9;
-  font-family: 'Montserrat', sans-serif;
+@font-face {
+  font-family: 'Bahnschrift Condensed';
+  src: url('fonts/BAHNSRIFT.TTF') format('truetype');
+}
+
+@font-face {
+  font-family: 'Arial Nova Light';
+  src: url('fonts\arial-nova-light.ttf') format('truetype');
 }
 
 h1{
-  font-size: 3rem;
+  font-family: 'Bahnschrift Condensed', sans-serif;
+  font-size: 3.3rem;
   line-height: 1.7;
-  font-weight: 900;
+  font-weight: bold;
+  color: #062245;
+}
+
+body{
+  background-color: #BCD0E9;
 }
 
 h2{
   font-size: 2.5em;
   line-height: 1.7;
-  font-weight: 400;
+  font-family: 'Bahnschrift Condensed', sans-serif;
+  color: #062245;
 }
 
 h3{
   font-size: 2.0rem;
   line-height: 1.5;
-  font-weight: 300;
+  font-family: 'Arial Nova Light';
 }
 
 h4{
   font-size: 1.3rem;
-  line-height: 1.3;
-  font-weight: 300;
+  line-height: 1.2;
+  font-family: 'Arial Nova Light';
+
 }
 
 a{
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   line-height: 1.3;
-  font-weight: 300;
+  font-family: 'Arial Nova Light';
+
 }
 
 a:hover{
@@ -42,7 +56,18 @@ a:hover{
 p{
   font-size: 1.1rem;
   line-height: 1.3;
-  font-weight: 300;
+  font-family: 'Arial Nova Light';
+
+}
+
+thead{
+  font-family: 'Arial Nova Light';
+  font-size: 1.2rem;
+  background-color: #F79C5A;
+}
+
+td{
+  font-family: 'Arial Nova Light';
 }
 
 nav{
@@ -216,6 +241,8 @@ height: auto;
   margin-left: auto;
   display: block;
   width: 100%;
+  color: black;
+  font-family: 'Arial Nova Light';
   background-color: #F79C5A;
 }
 
