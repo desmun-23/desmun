@@ -89,6 +89,9 @@ nav{
   padding-bottom: 0;
 }
 
+#team-heading {
+  padding-top: 15px;
+}
 
 
 #footer {
@@ -202,7 +205,8 @@ nav{
 }
 
 .nav-link {
-  font-size: large;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 .nav-link:hover {
