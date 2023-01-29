@@ -5,8 +5,10 @@
 
 @font-face {
   font-family: 'Arial Nova Light';
-  src: url('fonts\arial-nova-light.ttf') format('truetype');
+  src: url('fonts\ARIALNOVALIGHT.ttf') format('truetype');
 }
+
+
 
 h1{
   font-family: 'Bahnschrift Condensed', sans-serif;
@@ -30,13 +32,13 @@ h2{
 h3{
   font-size: 2.0rem;
   line-height: 1.5;
-  font-family: 'Arial Nova Light';
+  font-family: 'Arial Nova Light', Arial, Helvetica, sans-serif;
 }
 
 h4{
   font-size: 1.3rem;
   line-height: 1.2;
-  font-family: 'Arial Nova Light';
+  font-family: 'Arial Nova Light', Arial, Helvetica, sans-serif;
 
 }
 
@@ -44,7 +46,7 @@ a{
   text-decoration: none;
   font-size: 1.1rem;
   line-height: 1.3;
-  font-family: 'Arial Nova Light';
+  font-family: 'Arial Nova Light', Arial, Helvetica, sans-serif;
 
 }
 
@@ -56,18 +58,18 @@ a:hover{
 p{
   font-size: 1.1rem;
   line-height: 1.3;
-  font-family: 'Arial Nova Light';
+  font-family: 'Arial Nova Light', Arial, Helvetica, sans-serif;
 
 }
 
 thead{
-  font-family: 'Arial Nova Light';
+  font-family: 'Arial Nova Light', Arial, Helvetica, sans-serif;
   font-size: 1.2rem;
   background-color: #F79C5A;
 }
 
 td{
-  font-family: 'Arial Nova Light';
+  font-family: 'Arial Nova Light', Arial, Helvetica, sans-serif;
 }
 
 nav{
@@ -246,12 +248,18 @@ height: auto;
   display: block;
   width: 100%;
   color: black;
-  font-family: 'Arial Nova Light';
+  font-family: 'Arial Nova Light', Arial, Helvetica, sans-serif;
   background-color: #F79C5A;
 }
 
 #delegation-button:hover{
   background-color: #E3C5B1
+}
+
+#delegation-header{
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 iframe{
