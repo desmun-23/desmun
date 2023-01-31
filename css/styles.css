@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'Bahnschrift Condensed';
-  src: url('fonts/BAHNSRIFT.TTF') format('truetype');
+  src: url('fonts\banhschrift.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Arial Nova Light';
-  src: url('fonts\ARIALNOVALIGHT.ttf') format('truetype');
+  src: url('fonts\arialnovalight.ttf') format('truetype');
 }
 
 
@@ -137,9 +137,27 @@ nav{
   font-size: 20px;
 }
 
-.fatima{
-  padding-top: 100px;
-  padding-bottom: 100px;
+
+
+#fatima{
+  aspect-ratio: 1000/1333;
+  position: relative;
+  height: auto;
+  max-width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 3px;
+}
+
+#fatima-text{
+  position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+text-align: center;
 }
 
 #img {
