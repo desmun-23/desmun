@@ -124,7 +124,6 @@ nav{
 .social a{
   font-size: 24px;
   color: inherit;
-  border: 1px solid #ccc;
   width: 40px;
   height: 40px;
   line-height: 38px;
@@ -320,4 +319,12 @@ iframe{
 
 #big4row{
   padding-bottom: 20px;
+}
+
+i{
+  transition: all .2s ease-in-out;
+}
+
+i:hover{
+  transform: scale(1.5);
 }
