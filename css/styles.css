@@ -69,10 +69,20 @@ thead{
   font-family: 'Arial Nova Light', Arial, Helvetica, sans-serif;
   font-size: 1.2rem;
   background-color: #F79C5A;
+  border-color: black;
 }
 
 td{
   font-family: 'Arial Nova Light', Arial, Helvetica, sans-serif;
+}
+
+tbody{
+  background-color: #E3C5B1;
+  border-color: black;
+}
+
+#reall-row{
+  background-color: #E3C5B1;
 }
 
 nav{
@@ -164,6 +174,7 @@ text-align: center;
   height: auto;
   max-width: 100%;
   margin-bottom: 15px;
+  border-radius: 10px;
 }
 
 #title-text{
@@ -190,7 +201,7 @@ text-align: center;
   margin-right: auto;
   margin-top: 20px;
   margin-bottom: 20px;
-  border-radius: 3px;
+  border-radius: 10px;
 }
 
 #director{
@@ -198,7 +209,6 @@ text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
 }
-
 
 .accordion-item{
   border: 0px;
@@ -267,6 +277,7 @@ height: auto;
 
 .carousel-item{
   background-color: #E3C5B1;
+  border-radius: 10px
 }
 
 
