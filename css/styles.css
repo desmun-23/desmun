@@ -8,8 +8,6 @@
   src: url('fonts\arialnovalight.ttf') format('truetype');
 }
 
-
-
 h1{
   font-family: 'Bahnschrift Condensed', sans-serif;
   font-size: 3.3rem;
@@ -19,7 +17,7 @@ h1{
 }
 
 body{
-  background-image: linear-gradient(#BCD0E9 , #6088AB);
+  background-image: linear-gradient(#dae2ea , #9fbad3);
 
 }
 
@@ -68,7 +66,7 @@ p{
 thead{
   font-family: 'Arial Nova Light', Arial, Helvetica, sans-serif;
   font-size: 1.2rem;
-  background-color: #F79C5A;
+  background-color: #F9AB91;
   border-color: black;
 }
 
@@ -77,16 +75,12 @@ td{
 }
 
 tbody{
-  background-color: #E3C5B1;
+  background-color: whitesmoke;
   border-color: black;
 }
 
-#reall-row{
-  background-color: #E3C5B1;
-}
-
 nav{
-  background-color: #ea7b2c;
+  background-color: #F57145;
 
 }
 
@@ -110,7 +104,7 @@ nav{
 
 
 #footer {
-  background-color: #F79C5A;
+  background-color: #5F89B5;
   padding: 30px 0;
 }
 
@@ -204,7 +198,7 @@ text-align: center;
 }
 
 #director{
-  background-color: #E6A770;
+  background-color: #F9AB91;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -212,11 +206,11 @@ text-align: center;
 .accordion-item{
   border: 0px;
   padding: 0px;
-  background-color: #E3C5B1;
+  background-color: #FDC5AD;
 }
 
 .the4{
-  background-color: #E3C5B1;
+  background-color: #FDC5AD;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -275,7 +269,7 @@ height: auto;
 }
 
 .carousel-item{
-  background-color: #E3C5B1;
+  background-color: #F9AB91;
   border-radius: 10px
 }
 
@@ -290,11 +284,11 @@ height: auto;
   width: 100%;
   color: black;
   font-family: 'Arial Nova Light', Arial, Helvetica, sans-serif;
-  background-color: #F79C5A;
+  background-color: #F9AB91;
 }
 
 #delegation-button:hover{
-  background-color: #E3C5B1
+  background-color: #FDC5AD
 }
 
 #delegation-header{
@@ -323,6 +317,8 @@ height: auto;
 
 /* Desktop */
 @media (min-width:900px) {
+
+
   .video-wrapper{
     position: relative;
     padding-bottom: 37.5%;
