@@ -80,7 +80,7 @@ tbody{
 }
 
 nav{
-  background-color: #F57145;
+  background-image: linear-gradient(30deg, #F57145, #F2443B);
 
 }
 
@@ -273,10 +273,13 @@ height: auto;
 }
 
 .carousel-item{
-  background-color: #F9AB91;
-  border-radius: 10px
+  background-color: #FDC5AD;
+  border-radius: 10px;
 }
 
+#exec-buttons-row{
+  padding-bottom: 18px;
+}
 
 
 #delegation-button{
@@ -339,6 +342,35 @@ height: auto;
     padding-left: auto;
     padding-right: auto;
   }
+}
+
+/* Big screen */
+@media (min-width:1000px) {
+  .video-wrapper{
+    position: relative;
+    padding-bottom: 37.5%;
+    height: 0;
+  }
+  
+  .video-wrapper iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding-left: auto;
+    padding-right: auto;
+  }
+
+  h1{
+    font-size: 3.5rem;
+  }
+
+  h3{
+    font-size: 2.3rem;
+  }
+
 }
 
 iframe{
