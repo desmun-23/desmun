@@ -291,6 +291,7 @@ height: auto;
 }
 
 #delegation-button{
+  border-color: #F34E3E;
   margin-top: 10px;
   margin-bottom: 10px;
   margin-right: auto;
@@ -304,6 +305,10 @@ height: auto;
 
 #delegation-button:hover{
   background-color: #FDC5AD
+}
+
+#delegation-button:focus{
+  box-shadow: none;
 }
 
 #delegation-header{
